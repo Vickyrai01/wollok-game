@@ -1,0 +1,15 @@
+import wollok.game.*
+
+import config.tablero.tablero
+import config.colisiones.colisiones
+import config.visuales.visuales
+
+program PepitaGame {
+	game.title("Pepita")
+
+	tablero.configurar()
+	colisiones.configurar()
+	visuales.configurar()
+
+	game.start()
+}
