@@ -8,4 +8,6 @@ class Pared {
         personaje.retroceder()
     }
 
+    method resetearse(){}
+
 }

@@ -4,12 +4,13 @@ import config.tablero.tablero
 import config.colisiones.colisiones
 import config.visuales.visuales
 
-program PepitaGame {
-	game.title("Pepita")
+program main {
+	game.title("wollok game")
 
 	tablero.configurar()
 	colisiones.configurar()
 	visuales.configurar()
 
 	game.start()
+	
 }

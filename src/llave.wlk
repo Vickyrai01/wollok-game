@@ -10,4 +10,8 @@ object llave{
       position = game.at(17, 18)
     }
 
+    method resetearse(){
+      position = game.at(15, 8)
+    }
+
 }

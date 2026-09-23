@@ -16,7 +16,6 @@ object paredesHandler{
         self.cargarPosicionDeParedesVerticales(3, 14, 1)
         self.cargarPosicionDeParedesVerticales(6, 8, 6)
         self.cargarPosicionDeParedesVerticales(11, 12, 7)
-        self.cargarPosicionDeParedesVerticales(13, 13, 8)
         self.cargarPosicionDeParedesVerticales(10, 12, 9)
         self.cargarPosicionDeParedesVerticales(6, 7, 9)
         self.cargarPosicionDeParedesVerticales(6, 9, ancho - 2)
@@ -30,6 +29,7 @@ object paredesHandler{
         self.cargarPosicionDeParedesHorizontales(9, 16, 10)
         self.cargarPosicionDeParedesHorizontales(1, 3, altura - 5)
         self.cargarPosicionDeParedesHorizontales(5, 6, altura - 5)
+        self.cargarPosicionDeParedesHorizontales(7, 8, 13)
 
         //Agregar paredes invisibles al mapa
         posicionesParedes.forEach({posicionPared => self.dibujarPared(new Pared(position = posicionPared))})

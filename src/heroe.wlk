@@ -23,4 +23,9 @@ object heroe {
         tieneLaLlave = true
     }
 
+    method resetearse(){
+        position = game.at(2, 4)
+        tieneLaLlave = false
+    }
+
 }
