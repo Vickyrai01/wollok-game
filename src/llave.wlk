@@ -2,7 +2,7 @@ import wollok.game.*
 object llave{
     var property position = game.at(15, 8)
 
-    method image() =  "lava2.png"
+    method image() =  "llave.png"
     
     method chocarCon(personaje) {
       personaje.conseguirLlave()

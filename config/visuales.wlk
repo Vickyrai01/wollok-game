@@ -8,9 +8,9 @@ import config.reset.reset
 object visuales{
 
     method configurar() {
-        game.addVisualCharacter(heroe)
         game.addVisual(puerta)
-        game.addVisual(llave) 
+        game.addVisual(llave)
+        game.addVisualCharacter(heroe) 
         game.addVisual(reset)
     }
 

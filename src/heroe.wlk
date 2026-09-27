@@ -6,7 +6,7 @@ object heroe {
     var posicionAnterior = game.at(2, 4)
     var property tieneLaLlave = false
 
-    method image() = "lava2.png"
+    method image() = "heroe.png"
 
     method position() = position 
 
