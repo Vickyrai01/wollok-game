@@ -6,8 +6,6 @@
 
 - [Cómo ejecutarlo](#cómo-ejecutarlo)
 - [Cómo está organizado](#cómo-está-organizado)
-- [Objetos, clases y responsabilidades](#objetos-clases-y-responsabilidades)
-- [Movimiento y colisiones](#movimiento-y-colisiones)
 - [Herramientas utilizadas](#herramientas-utilizadas)
 
 ## Cómo ejecutarlo
@@ -33,20 +31,6 @@ src/
 └── pared.wlk
 assets/                # Imágenes del juego, incluido el fondo nivel 1.png
 ```
-
-## Objetos, clases y responsabilidades
-
-`heroe`, `llave` y `puerta` son **WKOs**: este juego necesita un personaje, una llave y una puerta particulares. No hace falta definir una clase para cada uno.
-
-En cambio, **`Pared` es una clase** porque se necesitan muchas paredes con el mismo comportamiento y distintas posiciones. En `paredesHandler.wlk` se crea cada una con `new Pared(position = posicionPared)`.
-
-Cada objeto tiene una responsabilidad concreta: el héroe recuerda si consiguió la llave; la llave le envía `conseguirLlave()`; la puerta consulta `tieneLaLlave()` y decide si lo deja pasar. `colisiones` conecta estos objetos con los eventos del juego.
-
-La imagen de fondo aporta el dibujo del escenario. Las instancias de `Pared` son objetos invisibles ubicados sobre ese fondo: son ellas las que impiden el paso. El objeto `reset` también es invisible y está detrás de la puerta, en `game.at(4, 15)`.
-
-## Movimiento y colisiones
-
-En `visuales.wlk`, `game.addVisualCharacter(heroe)` registra al personaje controlado por teclado. En `heroe.wlk`, `position(nuevaPosicion)` guarda la posición anterior antes de actualizarla. Así, `retroceder()` puede deshacer el movimiento cuando el héroe encuentra una pared o una puerta sin tener la llave.
 
 ## Herramientas utilizadas
 
